@@ -21,6 +21,7 @@
         "singleReturnOnly": false,
         "classPropertiesAllowed": false
       }
-    ]
+    ],
+    "max-classes-per-file": "off"
   }
 }
