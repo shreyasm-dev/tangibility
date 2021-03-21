@@ -4,7 +4,8 @@
   "description": "Create concepts of tangible objects with states (like a finite state machine)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
