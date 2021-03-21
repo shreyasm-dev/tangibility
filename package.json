@@ -1,0 +1,27 @@
+{
+  "name": "tangibility",
+  "version": "0.0.1",
+  "description": "Create concepts of tangible objects with states (like a finite state machine)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreyasm-dev/tangibility.git"
+  },
+  "keywords": [
+    "tangibility",
+    "tangible",
+    "objects",
+    "states",
+    "object",
+    "physical"
+  ],
+  "author": "shreyasm-dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shreyasm-dev/tangibility/issues"
+  },
+  "homepage": "https://github.com/shreyasm-dev/tangibility#readme"
+}
