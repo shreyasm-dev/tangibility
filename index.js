@@ -19,9 +19,15 @@ const tangible = {
       if (!['object', 'string'].includes(typeof component) || !component) {
         // Components are not strings or objects
         throw new Error('Components must be strings or objects');
-      } else if ((typeof component === 'object' || !component) && (!component?.name || !component?.quantity)) {
-        // Component is an object, but does not have required properties
-        throw new Error('Object components must have name and quantity properties that are a string and whole number respectively');
+      } else if (typeof component === 'object') {
+        // Component is an object
+        if ((typeof component.name !== 'string' || !component.name) || (!Number.isInteger(component.quantity) || !component.quantity)) {
+          throw new Error('Object components must have name and quantity properties that are a string and whole number respectively');
+        } else if (!objects[component.name]) {
+          throw new Error('Component doesn\'t exist');
+        }
+      } else if (typeof component === 'string' && !components[component]) {
+        throw new Error('Component doesn\'t exist');
       }
     });
 
