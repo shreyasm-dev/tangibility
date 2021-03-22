@@ -41,7 +41,7 @@ const tangible = {
         } else if (!objects[component.name]) {
           throw new Error('Component doesn\'t exist');
         }
-      } else if (typeof component === 'string' && !components[component]) {
+      } else if (typeof component === 'string' && !objects[component]) {
         throw new Error('Component doesn\'t exist');
       }
     });
