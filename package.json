@@ -1,6 +1,6 @@
 {
   "name": "tangibility",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create concepts of tangible objects with states (like a finite state machine)",
   "main": "index.js",
   "scripts": {
