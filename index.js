@@ -9,7 +9,7 @@ const tangible = {
       // properties is not an object or is null (!{} is false)
       throw new Error('Optional parameter "properties" must be an object');
     } else if (objects[name]) {
-      throw new Error('Component with given name already exists');
+      throw new Error('Object with given name already exists');
     }
 
     objects[name] = {
