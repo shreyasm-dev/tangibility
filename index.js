@@ -1,6 +1,21 @@
 const objects = {};
 
 const tangible = {
+  registerBasicObject: (name, properties = {}) => {
+    if (typeof name !== 'string' || !name) {
+      // name is not a string or is an empty string
+      throw new Error('Required parameter "name" must be a non-empty string');
+    } else if (typeof properties !== 'object' || !properties) {
+      // properties is not an object or is null (!{} is false)
+      throw new Error('Optional parameter "properties" must be an object');
+    } else if (objects[name]) {
+      throw new Error('Component with given name already exists');
+    }
+
+    objects[name] = {
+      properties,
+    };
+  },
   registerObject: (name, components, properties = {}) => {
     if (typeof name !== 'string' || !name) {
       // name is not a string or is an empty string
